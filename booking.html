@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индекс Драйв | Аренда авто</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="#promo">Акции</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="branches.html">Филиалы</a>
+                <a href="login.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+<div class="container">
+    <h2>Оформление бронирования</h2>
+    <div class="booking-container">
+        <!-- Левая часть: Данные -->
+        <div class="booking-left">
+            <form class="auth-form" style="max-width: 100%; margin: 0;">
+                <h3>Данные клиента</h3>
+                <div class="news-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
+                    <div class="form-group"><label>Фамилия</label><input type="text" value="Иванов"></div>
+                    <div class="form-group"><label>Имя</label><input type="text" value="Иван"></div>
+                    <div class="form-group"><label>Телефон</label><input type="text" value="+7900..."></div>
+                    <div class="form-group"><label>Карта (последние 4)</label><input type="text" value="** 4567" disabled></div>
+                </div>
+
+                <h3 style="margin-top: 30px;">Данные аренды</h3>
+                <div class="news-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
+                    <div class="form-group">
+                        <label>Дата начала</label>
+                        <input type="date" id="dateStart">
+                    </div>
+                    <div class="form-group">
+                        <label>Дата возврата</label>
+                        <input type="date" id="dateEnd">
+                    </div>
+                    <div class="form-group">
+                        <label>Филиал</label>
+                        <select><option>Центральный</option><option>Аэропорт</option></select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Правая часть: Итог -->
+        <div class="booking-right">
+            <h3>Ваш заказ</h3>
+            <p><strong>Авто:</strong> Kia Rio (x555xx)</p>
+            <p>Цена за сутки: 3000 ₽</p>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #ddd;">
+            
+            <p id="discountText">Скидка: 0%</p>
+            <!-- Визуализация скидки -->
+            <div class="discount-bar">
+                <div class="discount-fill" id="discountFill"></div>
+            </div>
+
+            <h2 style="color: var(--primary);" id="finalPrice">0 ₽</h2>
+            <button class="btn" style="width: 100%;">Оплатить</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+                <p>Круглосуточная поддержка</p>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="branches.html">Филиалы</a></li>
+                <li><a href="profile.html">Кабинет</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

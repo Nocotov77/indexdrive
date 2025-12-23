@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Филиалы | Индекс Драйв</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/branches-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="booking.html">Бронирование</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Наши филиалы</h1>
+        
+        <!-- Карта -->
+        <div class="map-placeholder">
+            Карта города с 5 метками
+        </div>
+
+        <h3>Выберите филиал, чтобы увидеть доступные авто:</h3>
+        <div class="branch-buttons">
+            <button class="branch-btn active" onclick="showBranch('b1', this)">Центральный</button>
+            <button class="branch-btn" onclick="showBranch('b2', this)">Аэропорт</button>
+            <button class="branch-btn" onclick="showBranch('b3', this)">Вокзал</button>
+            <button class="branch-btn" onclick="showBranch('b4', this)">Северный</button>
+            <button class="branch-btn" onclick="showBranch('b5', this)">Южный</button>
+        </div>
+
+        <!-- Списки машин для каждого филиала -->
+        
+        <!-- Филиал 1 -->
+        <div id="b1" class="cars-container active">
+            <div class="mini-car-card">
+                <img src="media/kia-rio.webp" width="250" height="150" alt="Car">
+                <h4>Kia Rio</h4>
+                <p>2500 ₽/день</p>
+                <a href="booking.html" class="btn" style="margin-top: 10px; font-size: 0.8rem;">Бронировать</a>
+            </div>
+            <div class="mini-car-card">
+                <img src="media/skoda-octavia.webp" width="250" height="150" alt="Car">
+                <h4>Skoda Octavia</h4>
+                <p>3200 ₽/день</p>
+                <a href="booking.html" class="btn" style="margin-top: 10px; font-size: 0.8rem;">Бронировать</a>
+            </div>
+            <div class="mini-car-card">
+                <img src="media/bmw-3.webp" width="250" height="150" alt="Car">
+                <h4>BMW 3</h4>
+                <p>5500 ₽/день</p>
+                <a href="booking.html" class="btn" style="margin-top: 10px; font-size: 0.8rem;">Бронировать</a>
+            </div>
+        </div>
+
+        <!-- Филиал 2 (Пример другого контента) -->
+        <div id="b2" class="cars-container">
+            <div class="mini-car-card">
+                <img src="media/mers.jpg" width="250" height="150" alt="Car">
+                <h4>Mercedes E-class</h4>
+                <p>6000 ₽/день</p>
+                <a href="booking.html" class="btn" style="margin-top: 10px; font-size: 0.8rem;">Бронировать</a>
+            </div>
+            <div class="mini-car-card">
+                <img src="media/сamri.jpg" width="250" height="150" alt="Car">
+                <h4>Toyota Camry</h4>
+                <p>4000 ₽/день</p>
+                <a href="booking.html" class="btn" style="margin-top: 10px; font-size: 0.8rem;">Бронировать</a>
+            </div>
+            <div class="mini-car-card">
+                <img src="media/vw.jpg" width="250" height="150" alt="Car">
+                <h4>VW Polo</h4>
+                <p>2300 ₽/день</p>
+                <a href="booking.html" class="btn" style="margin-top: 10px; font-size: 0.8rem;">Бронировать</a>
+            </div>
+        </div>
+        
+        <!-- Для краткости остальные блоки скрыты в коде, логика та же (id="b3", id="b4"...) -->
+        <div id="b3" class="cars-container"><p>Машины филиала "Вокзал"...</p></div>
+        <div id="b4" class="cars-container"><p>Машины филиала "Северный"...</p></div>
+        <div id="b5" class="cars-container"><p>Машины филиала "Южный"...</p></div>
+
+    </main>
+
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showBranch(branchId, btn) {
+            // Скрыть все списки машин
+            document.querySelectorAll('.cars-container').forEach(el => el.classList.remove('active'));
+            // Показать выбранный
+            document.getElementById(branchId).classList.add('active');
+            
+            // Обновить активную кнопку
+            document.querySelectorAll('.branch-btn').forEach(el => el.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+</html>

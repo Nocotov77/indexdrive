@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Индекс Драйв</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="index.html#promo">Акции</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="login.html">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <form class="auth-form" action="profile.html" style="max-width: 600px;">
+            <h2 style="text-align: center;">Регистрация</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: var(--gray);">Создайте аккаунт для аренды авто</p>
+            
+            <div class="news-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 0;">
+                <!-- Личные данные -->
+                <div class="form-group">
+                    <label>Фамилия</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Отчество</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Дата рождения</label>
+                    <input type="date" required>
+                </div>
+                
+                <!-- Контакты и документы -->
+                <div class="form-group" style="grid-column: span 2;">
+                    <label>Паспортные данные (Серия и номер)</label>
+                    <input type="text" placeholder="1234 567890" required>
+                </div>
+                <div class="form-group" style="grid-column: span 2;">
+                    <label>Телефон</label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <!-- Безопасность -->
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" required>
+                </div>
+                <div class="form-group">
+                    <label>Повтор пароля</label>
+                    <input type="password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; margin-top: 25px;">Зарегистрироваться</button>
+            <p style="text-align: center; margin-top: 15px;">
+                <a href="login.html" style="color: var(--primary);">Уже есть аккаунт? Войти</a>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

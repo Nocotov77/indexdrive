@@ -1,0 +1,55 @@
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background: #e0e0e0 url('https://via.placeholder.com/1200x400/cccccc/777777?text=MAP+PLACEHOLDER') center no-repeat;
+            border-radius: var(--radius);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 1.5rem;
+        }
+        .branch-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .branch-btn {
+            background: var(--white);
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: var(--transition);
+        }
+        .branch-btn.active, .branch-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+        .cars-container {
+            display: none; /* Скрываем списки по умолчанию */
+            animation: fadeIn 0.5s ease;
+        }
+        .cars-container.active {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .mini-car-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        .mini-car-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+        }

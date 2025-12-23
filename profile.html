@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет | Индекс Драйв</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="booking.html">Бронирование</a>
+                <a href="history.html">История</a>
+                <a href="index.html" onclick="alert('Выход выполнен')">Выход</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Блок информации о пользователе -->
+        <section class="auth-form" style="max-width: 100%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <div>
+                <h1>Иванов Иван Иванович</h1>
+                <div style="display: flex; gap: 20px; margin-top: 10px; font-size: 1.1rem;">
+                    <span style="color: var(--primary); font-weight: bold;">★ 250 Баллов</span>
+                    <span style="color: var(--gray);">5 Бронирований</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <a href="cards.html" class="btn">Банковские карты</a>
+                <a href="history.html" class="btn" style="background: var(--dark);">История заказов</a>
+            </div>
+        </section>
+
+        <!-- Текущие бронирования -->
+        <h2 style="margin-top: 40px;">Активные бронирования</h2>
+        
+        <div class="news-grid">
+            <!-- Карточка бронирования -->
+            <article class="news-card" style="display: flex; flex-direction: column;">
+                <img src="media/K5.jpg" width="400" height="250" alt="Kia K5" class="news-img">
+                <div class="news-content">
+                    <div style="display: flex; justify-content: space-between;">
+                        <h3 style="color: var(--primary);">Kia K5 (Премиум)</h3>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem;">ID: 4042</span>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: var(--gray);">Комфортный седан для деловых поездок.</p>
+                    
+                    <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem;">
+                        <div><strong>Начало:</strong> 24.12.2025</div>
+                        <div><strong>Возврат:</strong> 26.12.2025</div>
+                        <div style="grid-column: span 2;"><strong>Филиал:</strong> Центральный офис</div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

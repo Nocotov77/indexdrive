@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История поездок | Индекс Драйв</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/history-style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="profile.html">Назад в кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>История бронирований</h1>
+
+        <!-- Элемент истории 1 -->
+        <div class="history-card">
+            <img src="media/hyndai-solaris.webp" width="250" height="200" alt="Hyundai Solaris" class="history-img">
+            <div class="history-info">
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <div>
+                        <h3>Hyundai Solaris</h3>
+                        <small>Заказ #100500 • Код брони: B-777</small>
+                    </div>
+                    <div style="text-align: right;">
+                        <h3 style="color: var(--primary);">4 500 ₽</h3>
+                        <small>Оплачено</small>
+                    </div>
+                </div>
+
+                <div class="history-meta">
+                    <div><span>Даты:</span> <br><strong style="color: var(--dark);">10.10.2025 - 12.10.2025</strong></div>
+                    <div><span>Срок:</span> <br><strong style="color: var(--dark);">2 дня</strong></div>
+                    <div><span>Филиал:</span> <br><strong style="color: var(--dark);">Аэропорт</strong></div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button class="btn" onclick="window.location.href='booking.html'">Повторить бронирование</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Сообщение если пусто (можно проверить JS-ом, но здесь просто верстка) -->
+        <div class="empty-state">
+            <h2>Здесь пока ничего нет</h2>
+            <p>Вы еще не совершали поездок с нами.</p>
+            <br>
+            <a href="index.html" class="btn">Найти авто</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

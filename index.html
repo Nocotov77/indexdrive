@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индекс Драйв | Аренда авто</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="#promo">Акции</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="branches.html">Филиалы</a>
+                <a href="login.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Секция о доверии / Призыв -->
+        <section class="hero">
+            <div class="container">
+                <h1>На любой случай, любой автомобиль</h1>
+                <p>Современный парк. Удобная оплата. Полная свобода передвижения.</p>
+                <a href="#search" class="btn">Найти авто</a>
+            </div>
+        </section>
+
+        <!-- Форма поиска -->
+        <section id="search">
+            <h2>Поиск автомобиля</h2>
+            <form class="search-box" action="booking.html">
+                <div class="form-group">
+                    <label>Класс</label>
+                    <select>
+                        <option>Эконом</option>
+                        <option>Премиум</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Марка</label>
+                    <input type="text" placeholder="Например, Kia">
+                </div>
+                <div class="form-group">
+                    <label>Модель</label>
+                    <input type="text" placeholder="Rio">
+                </div>
+                <div class="form-group" style="flex: 0;">
+                    <label>&nbsp;</label>
+                    <button type="submit" class="btn">Найти</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Новости -->
+        <section id="news" style="margin-top: 60px;">
+            <h2>Новости компании</h2>
+            <div class="news-grid">
+                <!-- Новость 1 -->
+                <article class="news-card">
+                    <img src="media/auto.jpeg" width="300" height="200" alt="Новые авто" class="news-img">
+                    <div class="news-content">
+                        <h3>Пополнение автопарка</h3>
+                        <p>Мы закупили 50 новых автомобилей премиум класса для вашего комфорта.</p>
+                        <br>
+                        <button class="btn">Читать</button>
+                    </div>
+                </article>
+                <!-- Новость 2 -->
+                <article class="news-card">
+                    <img src="media/sale.jpg" width="300" height="200" alt="Скидки" class="news-img">
+                    <div class="news-content">
+                        <h3>Летние скидки</h3>
+                        <p>Скидка 15% при бронировании от 7 дней в летний период.</p>
+                        <br>
+                        <button class="btn">Читать</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+                <p>Круглосуточная поддержка</p>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="branches.html">Филиалы</a></li>
+                <li><a href="profile.html">Кабинет</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

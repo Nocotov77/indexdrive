@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индекс Драйв | Аренда авто</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Index <span>Drive</span></a>
+            <nav class="menu">
+                <a href="#promo">Акции</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="branches.html">Филиалы</a>
+                <a href="login.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+<div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h2>Мои карты</h2>
+        <button id="btnAddCard" class="btn">Добавить карту</button>
+    </div>
+
+    <!-- Список карт -->
+    <div class="news-grid">
+        <div class="news-card" style="padding: 20px; border-left: 5px solid var(--primary);">
+            <h3>**** **** **** 1111</h3>
+            <p>Тип: Visa</p>
+            <p style="color: green;">Активна</p>
+            <br>
+            <button class="btn btn-danger">Удалить</button>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно -->
+<div id="cardModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Новая карта</h3>
+        <form style="margin-top: 20px;">
+            <div class="form-group">
+                <label>Номер карты</label>
+                <input type="text" id="cardNumber" maxlength="19" placeholder="0000 0000 0000 0000">
+                <small id="cardTypeLabel" style="color: var(--primary); font-weight: bold;"></small>
+            </div>
+            <div class="form-group">
+                <label>Владелец (Lat)</label>
+                <input type="text" placeholder="IVAN IVANOV">
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <div class="form-group">
+                    <label>Срок</label>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label>CVV</label>
+                    <input type="password" maxlength="3">
+                </div>
+            </div>
+            <button type="button" class="btn" style="width: 100%; margin-top: 15px;">Сохранить</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container navbar">
+            <div class="contacts">
+                <h3>8 (800) 111-11-11</h3>
+                <p>Круглосуточная поддержка</p>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="branches.html">Филиалы</a></li>
+                <li><a href="profile.html">Кабинет</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
